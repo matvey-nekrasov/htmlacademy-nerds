@@ -1,4 +1,5 @@
-/* 
+/* globals */
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -13,4 +14,375 @@ input[type="radio"].visually-hidden {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    padding: 16px;
+    font: inherit;
+    border: none;
+    line-height: 18px;
+    color: white;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+    background-color: #e74246;
+}
+
+.btn-red:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
+
+.btn-green {
+    background-color: #00ca74;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #00bc6c;
+}
+
+.btn-green:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #00aa62;
+}
+
+.btn-yellow {
+    background-color: #efc84a;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    background-color: #eab534;
+}
+
+.btn-yellow:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #e5a722;
+}
+
+.btn-gray {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.btn-gray-active {
+    color: #000000;
+    background-color: #ffffff;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 3px solid #dbdbdb;
+}
+
+.btn-gray:hover,
+.btn-gray:focus {
+    background-color: #dfdfdf;
+}
+
+.btn-gray:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+}
+
+.btn-w50px {
+    width: 50px;
+}
+
+.btn-w160px {
+    width: 160px;
+}
+
+.btn-w220px {
+    width: 220px;
+}
+
+.btn-w240px {
+    width: 240px;
+}
+
+.btn-w260px {
+    width: 260px;
+}
+
+
+/* header.navigation */
+
+.nav {
+    background-color: #eeeeee;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: black;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.nav a.active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fb565a;
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: #fb565a;
+}
+
+.nav a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+
+/* main.advantages */
+
+.advant ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advant-head {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.advant-desc {
+    color: #283136;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* main.services */
+
+.services ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.services-desc {
+    font-weight: 400;
+    color: #283136;
+}
+
+
+/* main.about */
+
+.about h3 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.about-p {
+    color: #283136;
+    font-weight: 400;
+}
+
+.about-p-uppercase {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about dd {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* main.partners */
+
+.partners ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.partners img {
+    opacity: 0.2;
+}
+
+.partners img:hover,
+.partners img:focus {
+    opacity: 1;
+}
+
+.partners img:active {
+    opacity: 0.1;
+}
+
+
+/* footer.contacts */
+
+.contacts-p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.contacts address {
+    color: #666666;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
+}
+
+
+/* footer.socials */
+
+.socials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socials-p-big {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.socials-p-small {
+    color: #444444;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+/* modals.writeus */
+
+.writeus h2 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.writeus label {
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.writeus input {
+    font: inherit;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.5;
+    background-color: transparent;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+}
+
+.writeus input:hover {
+    opacity: 0.5;
+    border: 2px solid #b4b9bb;
+}
+
+.writeus input:focus {
+    opacity: 1;
+    border: 2px solid #000000;
+}
+
+.writeus input:invalid {
+    color: #e74246;
+    opacity: 1;
+    border: 2px solid #e74246;
+}
+
+
+/* catalog.html */
+
+
+/* main */
+
+.main h1 {
+    margin: 0;
+    padding: 0;
+    /* Style for "Магазин го" */
+    color: #000000;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+
+/* filter */
+
+.filter legend {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.05px;
+    border: none;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.filter label {
+    color: #283136;
+    font-weight: 400;
+    line-height: 20px;
+}

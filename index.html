@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Студия нёрдс</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a><img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип студии нёрдс"></a>
+        <nav class="nav">
+            <a><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии нёрдс"></a>
             <ul>
-                <li><a href="#">Студия</a></li>
+                <li><a class="active" href="#">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
                 <li><a href="#">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -22,62 +23,62 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <h1 class="visually-hidden">Студия нёрдс</h1>
 
-        <section>
+        <section class="advant">
             <h2 class="visually-hidden">Наши приемущества и особенности работы</h2>
-            <ul>
+            <ul class="advant-list">
                 <li>
-                    <p>Долго, дорого, скрупулезно.</p>
-                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                    <p class="advant-head">Долго, дорого, скрупулезно.</p>
+                    <p class="advant-desc">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                 </li>
                 <li>
-                    <p>Любим математику как никто другой</p>
-                    <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                    <p class="advant-head">Любим математику как никто другой</p>
+                    <p class="advant-desc">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                 </li>
                 <li>
-                    <p>Только ночь, только хардкор</p>
-                    <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                    <p class="advant-head">Только ночь, только хардкор</p>
+                    <p class="advant-desc">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                 </li>
             </ul>
-            <a href="#">Узнать-больше</a>
+            <a class="btn btn-red btn-w240px" href="#">Узнать больше</a>
         </section>
 
-        <section>
+        <section class="services">
             <h2 class="visually-hidden">Предоставляем услуги по разработке</h2>
             <ul>
                 <li>
                     <h3>Веб-сайты</h3>
-                    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <ahref="#">Заказать<span class="visually-hidden"> веб-сайт</span></a>
+                    <p class="services-desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                    <a class="btn btn-red btn-w160px" href="#">Заказать<span class="visually-hidden"> веб-сайт</span></a>
                 </li>
                 <li>
                     <h3>Приложения</h3>
-                    <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <ahref="#">Заказать<span class="visually-hidden"> приложение</span></a>
+                    <p class="services-desc">Покорите топ-10 приложений в AppStore и Google Play</p>
+                    <a class="btn btn-green btn-w160px" href="#">Заказать<span class="visually-hidden"> приложение</span></a>
                 </li>
                 <li>
                     <h3>Презентации</h3>
-                    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <ahref="#">Заказать<span class="visually-hidden"> презентацию</span></a>
+                    <p class="services-desc">Вы даже не подозреваете, насколько вы изумительны!</p>
+                    <a class="btn btn-yellow btn-w160px" href="#">Заказать<span class="visually-hidden"> презентацию</span></a>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section class="about">
             <h2 class="visually-hidden">О нас</h2>
-            <p>Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
+            <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+            <p class="about-p">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
                 рук, как роботы.</p>
-            <img src="img/nerds-illustration.jpg" width="360px" height="208px" alt="Логотип нёрдс">
-            <p>Выполняем заказы на разработку:</p>
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип нёрдс">
+            <p class="about-p-uppercase">Выполняем заказы на разработку:</p>
             <ul>
                 <li>Веб-сайтов любой сложности</li>
                 <li>Мобильных приложений для iOS и Android</li>
                 <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
-            <p>с 2004 года Любим точность во всем:</p>
+            <p class="about-p-uppercase">с 2004 года Любим точность во всем:</p>
             <dl>
                 <dt>146<span>%</span></dt>
                 <dd>Уровень самоотдачи</dd>
@@ -88,20 +89,20 @@
             </dl>
         </section>
 
-        <section>
+        <section class="partners">
             <h2 class="visually-hidden">Партнеры</h2>
             <ul>
                 <li>
-                    <a href=""><img src="img/logo-1.png" width="199px" height="68px" alt="Логотип HTML Academy"></a>
+                    <a href=""><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Academy"></a>
                 </li>
                 <li>
-                    <a href=""><img src="img/logo-2.png" width="209px" height="87px" alt="Логотип Barbershop Borodinsky"></a>
+                    <a href=""><img src="img/logo-2.png" width="209" height="90" alt="Логотип Barbershop Borodinsky"></a>
                 </li>
                 <li>
-                    <a href=""><img src="img/logo-3.png" width="185px" height="52px" alt="Логотип Pink"></a>
+                    <a href=""><img src="img/logo-3.png" width="185" height="52" alt="Логотип Pink"></a>
                 </li>
                 <li>
-                    <a href=""><img src="img/logo-4.png" width="173px" height="84px" alt="Логотип Mishka"></a>
+                    <a href=""><img src="img/logo-4.png" width="173" height="84" alt="Логотип Mishka"></a>
                 </li>
             </ul>
         </section>
@@ -109,16 +110,20 @@
     </main>
 
     <footer>
-        <section>
+        <section class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img src="img/map.png" width="1440px" height="416px" alt="Карта">
-            <p>Nёrds design studio</p>
-            <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            <a href="tel:78122757575">тел. +7 (812) 275-75-75</a>
-            <ahref="#">"Напишите нам"</a>
+            <img src="img/map.png" width="1440" height="416" alt="Карта">
+            <p class="contacts-p">Nёrds design studio</p>
+            <address>
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8<br>
+                <br>
+                тел. +7 (812) 275-75-75
+            </address>
+            <a class="btn btn-red btn-w220px" href="#">Напишите нам</a>
         </section>
 
-        <section>
+        <section class="socials">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul>
                 <li>
@@ -131,12 +136,12 @@
                     <a href="#">Instagram</a>
                 </li>
             </ul>
-            <b>Давайте дружить, это выгодно!</b>
-            <span>Скидка 10% для друзей из социальных сетей.</span>
+            <p class="socials-p-big">Давайте дружить, это выгодно!</p>
+            <p class="socials-p-small">Скидка 10% для друзей из социальных сетей.</p>
         </section>
     </footer>
 
-    <section>
+    <section class="writeus">
         <h2>Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
             <p>
@@ -145,13 +150,13 @@
             </p>
             <p>
                 <label for="writeus-email">Ваш e-mail:</label>
-                <input type="text" name="email" id="writeus-email" placeholder="email@example.com">
+                <input type="email" name="email" id="writeus-email" placeholder="email@example.com">
             </p>
             <p>
                 <label for="writeus-text">Текст письма:</label>
                 <input type="text" name="text" id="writeus-text" placeholder="В свободной форме">
             </p>
-            <buttontype="submit">Отправить</button>
+            <button class="btn btn-red btn-w260px" type="submit">Отправить</button>
         </form>
         <button type="button">Закрыть</button>
     </section>
