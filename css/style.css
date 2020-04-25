@@ -24,10 +24,30 @@ body {
     font-weight: 500;
     color: black;
     background-color: white;
+    min-width: 1200px;
 }
 
 a {
     text-decoration: none;
+}
+
+
+/* centering */
+
+.container-bg-color {
+    background-color: #eeeeee;
+}
+
+.container-center-main {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-center-map {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 
@@ -136,10 +156,17 @@ a {
 /* header.navigation */
 
 .nav {
-    background-color: #eeeeee;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid tomato;
 }
 
-.nav ul {
+.nav-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -166,10 +193,29 @@ a {
     opacity: 0.3;
 }
 
+.nav p {
+    margin: 0;
+}
+
+.nav-logo {
+    width: 180px;
+}
+
+.nav-menu-list {
+    width: 440px;
+    outline: 1px solid gold;
+}
+
+.nav-basket {
+    text-align: end;
+    width: 180px;
+    outline: 1px solid green;
+}
+
 
 /* main.advantages */
 
-.advant ul {
+.advant-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -178,6 +224,7 @@ a {
 .advant-head {
     font-size: 55px;
     line-height: 55px;
+    margin: 0;
 }
 
 .advant-desc {
@@ -188,25 +235,124 @@ a {
     line-height: 24px;
 }
 
+.advant li:nth-child(2),
+.advant li:nth-child(3) {
+    display: none;
+}
+
+.advant-item {
+    display: flex;
+    outline: 1px solid tomato;
+}
+
+.advant-item-text {
+    width: 400px;
+    outline: 1px solid gold;
+}
+
+.advant-head {
+    padding-top: 65px;
+    padding-bottom: 15px;
+}
+
+.advant-btn {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.advant-item::after {
+    content: "";
+    width: 698px;
+    height: 413px;
+    outline: 1px solid green;
+    margin: auto;
+    background-image: url("../img/slide1.png");
+    background-repeat: no-repeat;
+}
+
+.advant-relative-container {
+    position: relative;
+}
+
+.advant-btn-slider {
+    position: absolute;
+    bottom: 95px;
+    width: 80px;
+}
+
+.advant-btn-slider:nth-of-type(1) {
+    left: calc(50% - 40px - 100px);
+}
+
+.advant-btn-slider:nth-of-type(2) {
+    left: calc(50% - 40px);
+}
+
+.advant-btn-slider:nth-of-type(3) {
+    left: calc(50% - 40px + 100px);
+}
+
+.advant {
+    margin-bottom: 80px;
+}
+
 
 /* main.services */
-
-.services ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 .services h3 {
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .services-desc {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 260px;
     font-weight: 400;
     color: #283136;
+}
+
+.services-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    outline: 1px solid greenyellow;
+}
+
+.services-item {
+    width: 300px;
+    margin-right: 100px;
+    outline: 1px solid tomato;
+}
+
+.services-item:last-child {
+    margin-right: 0;
+}
+
+.services-item::before {
+    display: block;
+    width: 300px;
+    height: 146px;
+    content: "";
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
+.services-item:nth-child(1)::before {
+    background-image: url("../img/illustration-1.png");
+}
+
+.services-item:nth-child(2)::before {
+    background-image: url("../img/illustration-2.png");
+}
+
+.services-item:nth-child(3)::before {
+    background-image: url("../img/illustration-3.png");
 }
 
 
@@ -300,6 +446,10 @@ a {
 
 
 /* modals.writeus */
+
+.writeus {
+    display: none;
+}
 
 .writeus h2 {
     font-size: 45px;
