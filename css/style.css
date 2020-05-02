@@ -173,7 +173,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .nav-logo {
@@ -192,33 +191,30 @@ a {
     list-style: none;
 }
 
-.nav-menu-item-link {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.nav-menu-item-active {
+.nav-menu-link-active {
     border-bottom: 2px solid #fb565a;
 }
 
-.nav a {
+.nav-menu-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     color: black;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.nav a:hover {
+.nav-menu-link:not(.nav-menu-link-active):hover {
     color: #fb565a;
 }
 
-.nav a:active {
+.nav-menu-link:not(.nav-menu-link-active):active {
     color: #000000;
     opacity: 0.3;
 }
 
 .nav-basket-link {
     position: relative;
-
     padding: 10px 0 10px 40px;
 }
 
@@ -254,6 +250,7 @@ a {
     max-width: 600px;
     margin: 0;
     margin-bottom: 30px;
+    padding-top: 70px;
 
     font-size: 55px;
     line-height: 55px;
@@ -272,7 +269,7 @@ a {
 }
 
 .slider-btn {
-    margin-bottom: 40px;
+    margin-bottom: 75px;
 }
 
 .slider-item:not(:nth-child(1)) {
@@ -282,32 +279,32 @@ a {
 .slider-item:nth-child(1) {
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 93% 18px;
+    background-position: 93% 10px;
 }
 
 .slider-item:nth-child(2) {
-    background-image: url("../img/slide1.png");
+    background-image: url("../img/slide2.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 100% -5px;
 }
 
 .slider-item:nth-child(3) {
-    background-image: url("../img/slide1.png");
+    background-image: url("../img/slide3.png");
     background-repeat: no-repeat;
-    background-position: 100% 20px;
+    background-position: 100% 10px;
 }
 
-.slider-controls {
+.slider-indicators {
     position: absolute;
     left: 50%;
-    bottom: 104px;
+    bottom: 85px;
 
     font-size: 0;
     line-height: 0;
     transform: translateX(-50%);
 }
 
-.slider-control {
+.slider-indicator {
     position: relative;
 
     display: inline-block;
@@ -323,11 +320,9 @@ a {
     cursor: pointer;
 }
 
-.slider-control::before {
+.slider-indicator::before {
     position: absolute;
     content: "";
-    /* top: 8px; */
-    /* left: 8px; */
 
     width: 18px;
     height: 18px;
@@ -336,7 +331,7 @@ a {
     background: #fff;
 }
 
-.slider-control-active::after {
+.slider-input:checked + .slider-indicator::after {
     position: absolute;
     content: "";
     top: calc(50% - 4px);
@@ -347,6 +342,11 @@ a {
 
     border: 2px solid #c1c1c1;
     border-radius: 50%;
+}
+
+.slider-input:focus + .slider-indicator {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 

@@ -21,13 +21,13 @@
                         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии нёрдс">
                     </p>
                     <ul class="nav-menu-list">
-                        <li><a class="nav-menu-item-link nav-menu-item-active" href="#">Студия</a></li>
-                        <li><a class="nav-menu-item-link" href="#">Клиенты</a></li>
-                        <li><a class="nav-menu-item-link" href="#">Магазин</a></li>
-                        <li><a class="nav-menu-item-link" href="#">Контакты</a></li>
+                        <li><a class="nav-menu-link nav-menu-link-active">Студия</a></li>
+                        <li><a class="nav-menu-link" href="#">Клиенты</a></li>
+                        <li><a class="nav-menu-link" href="#">Магазин</a></li>
+                        <li><a class="nav-menu-link" href="#">Контакты</a></li>
                     </ul>
                     <p>
-                        <a class="nav-basket-link" href="#">Корзина</a>
+                         <a class="nav-menu-link nav-basket-link" href="#">Корзина</a>
                     </p>
                 </nav>
             </div>
@@ -40,22 +40,15 @@
             <section class="slider container-center-main">
                 <h2 class="visually-hidden">Приемущества и особенности работы</h2>
 
-                <div class="slider-controls">
-                    <span class="slider-control slider-control-active"></span>
-                    <span class="slider-control"></span>
-                    <span class="slider-control"></span>
+                <div class="slider-indicators">
+                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup" id="slider-input-1" checked>
+                    <label class="slider-indicator" for="slider-input-1" >slider1</label>
 
-                </div>
+                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup" id="slider-input-2">
+                    <label class="slider-indicator" for="slider-input-2">slider2</label>
 
-                <div>
-                    <input type="radio" name="sliders" id="slider-control-1">
-                    <label for="slider-control-1">slider1</label>
-
-                    <input type="radio" name="sliders" id="slider-control-2">
-                    <label for="slider-control-2">slider2</label>
-
-                    <input type="radio" name="sliders" id="slider-control-3">
-                    <label for="slider-control-3">slider3</label>
+                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup" id="slider-input-3">
+                    <label class="slider-indicator" for="slider-input-3">slider3</label>
                 </div>
 
                 <ul class="slider-list">
@@ -72,7 +65,7 @@
                         <a class="btn btn-red btn-w240px slider-btn" href="#">Узнать больше</a>
                     </li>
                     <li class="slider-item">
-                        <h3 class="slider-title">Только ночь, только хардкор</h3>
+                        <h3 class="slider-title">Только ночь,<br> только хардкор</h3>
                         <p class="slider-desc">Работать днем, как все? Мы против этого. Ближе к полуночи работа
                             только начинается.</p>
                         <a class="btn btn-red btn-w240px slider-btn" href="#">Узнать больше</a>
