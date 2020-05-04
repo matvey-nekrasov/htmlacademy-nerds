@@ -18,7 +18,9 @@
             <div class="container-center-main">
                 <nav class="nav">
                     <p class="nav-logo">
-                        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии нёрдс">
+                        <a>
+                            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии нёрдс">
+                        </a>
                     </p>
                     <ul class="nav-menu-list">
                         <li><a class="nav-menu-link nav-menu-link-active">Студия</a></li>
@@ -36,6 +38,7 @@
 
     <main class="main">
         <h1 class="visually-hidden">Студия нёрдс</h1>
+
         <div class="container-bg-color">
             <section class="slider container-center-main">
                 <h2 class="visually-hidden">Приемущества и особенности работы</h2>
@@ -163,7 +166,6 @@
                 </li>
             </ul>
         </section>
-
     </main>
 
     <footer>
@@ -234,16 +236,18 @@
                 </p>
                 <p class="writeus-p-column">
                     <label class="writeus-label" for="writeus-email">Ваш e-mail:</label>
-                    <input class="writeus-input" type="email" name="email" id="writeus-email" placeholder="email@example.com">
+                    <input class="writeus-input" type="email" name="email" id="writeus-email"
+                        placeholder="email@example.com">
                 </p>
             </div>
             <p class="writeus-p-textarea">
                 <label class="writeus-label" for="writeus-textarea">Текст письма:</label>
-                <textarea class="writeus-input writeus-input-textarea" name="textarea" id="writeus-textarea" placeholder="В свободной форме"></textarea>
+                <textarea class="writeus-input writeus-input-textarea" name="textarea" id="writeus-textarea"
+                    placeholder="В свободной форме"></textarea>
             </p>
             <button class="btn btn-red btn-w260px" type="submit">Отправить</button>
         </form>
-        <button class="writeus-close" type="button">Закрыть</button>
+        <button class="writeus-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 </body>
 
