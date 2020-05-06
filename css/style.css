@@ -617,7 +617,8 @@ a {
     line-height: 0;
 }
 
-.contacts-map-yandex {
+.contacts-map-yandex, 
+.contacts-map-google {
     position: relative;
     z-index: 2;
 }
