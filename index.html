@@ -25,7 +25,7 @@
                     <ul class="nav-menu-list">
                         <li><a class="nav-menu-link nav-menu-link-active">Студия</a></li>
                         <li><a class="nav-menu-link" href="#">Клиенты</a></li>
-                        <li><a class="nav-menu-link" href="#">Магазин</a></li>
+                        <li><a class="nav-menu-link" href="catalog.html">Магазин</a></li>
                         <li><a class="nav-menu-link" href="#">Контакты</a></li>
                     </ul>
                     <p>
@@ -43,22 +43,8 @@
             <section class="slider container-center-main">
                 <h2 class="visually-hidden">Приемущества и особенности работы</h2>
 
-                <div class="slider-indicators">
-                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup"
-                        id="slider-input-1" checked>
-                    <label class="slider-indicator" for="slider-input-1">slider1</label>
-
-                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup"
-                        id="slider-input-2">
-                    <label class="slider-indicator" for="slider-input-2">slider2</label>
-
-                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup"
-                        id="slider-input-3">
-                    <label class="slider-indicator" for="slider-input-3">slider3</label>
-                </div>
-
                 <ul class="slider-list">
-                    <li class="slider-item">
+                    <li class="slider-item slider-item-visible">
                         <h3 class="slider-title">Долго, дорого, скрупулезно.</h3>
                         <p class="slider-desc">Математически выверенный дизайн <br> для вашего сайта или
                             мобильного приложения.</p>
@@ -77,6 +63,20 @@
                         <a class="btn btn-red btn-w240px slider-btn" href="#">Узнать больше</a>
                     </li>
                 </ul>
+
+                <div class="slider-knobs">
+                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup"
+                        id="slider-input-1" checked>
+                    <label class="slider-knob" for="slider-input-1">Slider 1</label>
+
+                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup"
+                        id="slider-input-2">
+                    <label class="slider-knob" for="slider-input-2">Slider 2</label>
+
+                    <input class="slider-input visually-hidden" type="radio" name="slider-radiogroup"
+                        id="slider-input-3">
+                    <label class="slider-knob" for="slider-input-3">Slider 3</label>
+                </div>
             </section>
         </div>
 
@@ -145,7 +145,7 @@
             <h2 class="visually-hidden">Партнеры</h2>
             <ul class="partners-list">
                 <li>
-                    <a class="partners-link" href="#">
+                    <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss">
                         <img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Academy">
                     </a>
                 </li>
@@ -171,8 +171,12 @@
     <footer>
         <section class="contacts container-center-map">
             <h2 class="visually-hidden">Контакты</h2>
-            <div class="contacts-container-relative ">
-                <img src="img/map.png" width="1440" height="416" alt="Карта">
+            <div class="contacts-container-relative">
+                <iframe class="contacts-map-yandex" src="https://yandex.ru/map-widget/v1/-/C0SLIFn4" width="1440"
+                    height="416" frameborder="0" allowfullscreen="false" name="seamless"></iframe>
+                <p class="contacts-map-png">
+                    <img src="img/map.png" width="1440" height="416" alt="Карта">
+                </p>
                 <div class="contacts-card">
                     <p class="contacts-title">Nёrds design studio</p>
                     <address class="contacts-address">
@@ -181,7 +185,7 @@
                         <br>
                         тел. +7 (812) 275-75-75
                     </address>
-                    <a class="btn btn-red btn-w220px" href="#">Напишите нам</a>
+                    <a class="btn btn-red btn-w220px btn-writeus" href="#">Напишите нам</a>
                 </div>
                 <img class="contacts-marker" src="img/map-marker.png" width="231" height="190"
                     alt="Маркер-указатель на карте">
@@ -249,6 +253,8 @@
         </form>
         <button class="writeus-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
