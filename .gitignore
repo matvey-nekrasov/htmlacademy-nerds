@@ -1,1 +1,9 @@
-refs/
+node_modules/
+.DS_Store
+.idea
+.vscode
+.vs
+*.ai
+*.log
+npm-debug.*
+Thumbs.db

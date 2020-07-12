@@ -33,8 +33,7 @@ sliderInputs.forEach(function (sliderInput) {
             if (sliderInputs[i].checked) {
                 sliderItems[i].classList.add("slider-item-visible");
             }
-            else
-            {
+            else {
                 sliderItems[i].classList.remove("slider-item-visible");
             }
         }
